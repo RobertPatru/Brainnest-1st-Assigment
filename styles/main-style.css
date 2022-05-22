@@ -6,7 +6,8 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 body {
@@ -18,15 +19,45 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: #434750;
+    /* background: #434750; */
 }
 
-li a{
-    /* padding: 50px 315px; */
-    /* background: red; */
-    font-size: 40px;
+.container {
+    max-width: 1200px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
+/* ---------------------------------------------------   Styles for about me section */
+img {
+    height: 200px;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: left;
+    /* background-color: green; */
+    padding-right: 200px;
+}
+
+.bigger-font {
+    font-size: 70px;
+}
+
+.color-blue {
+    color: #33a3ee;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    text-shadow: -1px -1px rgba(0, 0, 0, 0.1);
+}
+
+.developer {
+    text-transform: uppercase;
+    font-size: 80px;
+    letter-spacing: 5px;
+}
+
+/* ---------------------------------------------------   Styles for the Categories */
 ul {
     position: relative;
     transform: skewY(-15deg);
@@ -42,6 +73,7 @@ ul li {
     z-index: var(--i);
     transition: var(--transition-speed);
     text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 ul li::before {
@@ -80,7 +112,7 @@ ul li::after {
 
 /* we make the shadow ony for the last list item */
 ul li:last-child::after {
-    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: -150px 150px 20px rgba(0, 0, 0, 0.4);
 }
 
 ul li:hover::after {
@@ -94,7 +126,8 @@ ul li:hover {
 
 ul li a {
     text-decoration: none;
-    color: #999;
+    color: rgb(216, 216, 216);
+    font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: var(--transition-speed) all linear;
@@ -103,4 +136,5 @@ ul li a {
 /* when you hover over "li" the styles will aply to "a" */
 ul li:hover a {
    color: #fff;
+   font-weight: 700f;
 }

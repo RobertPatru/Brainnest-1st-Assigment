@@ -7,21 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me page</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main-style.css">
 </head>
 
 <body>
     <div class="container">
-        <!-- <h1>Hello! This is my presentation website.</h1> -->
+        <div class="about-me">
+            <h1> <span class="bigger-font"> Hi! I'm <span class="color-blue">Robert</span>, <br> </span> a future <span class="color-blue">Frontend <span class="developer">Developer</span>  </span></h1>
+        </div>
 
         <ul>
             <!-- I tried to change their "z-index" by adding a different class to each list element, but it didn't work. I don't know why. That's the reason why I added the variables through HTML -->
             <!-- WARNING "style" added down below -->
-            <li style="--i:4"><a href="./pages/hobby.html">My Hobbies</a></li>
-            <li style="--i:3"><a href="./pages/books.html">My Favorite Books</a></li>
-            <li style="--i:2"><a href="./pages/movies.html">My Favorite Movies</a></li>
-            <li style="--i:1"><a href="./pages/anime.html">My Favorite Anime</a></li>
+            <li style="--i:4" class="list-item-shadow"><a href="./pages/hobby.html">My Hobbies</a></li>
+            <li style="--i:3" class="list-item-shadow"><a href="./pages/books.html">My Favorite Books</a></li>
+            <li style="--i:2" class="list-item-shadow"><a href="./pages/movies.html">My Favorite Movies</a></li>
+            <li style="--i:1" class="list-item-shadow"><a href="./pages/anime.html">My Favorite Anime</a></li>
         </ul>
     </div>
 </body>
