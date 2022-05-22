@@ -30,6 +30,22 @@ body {
 }
 
 /* ---------------------------------------------------   Styles for about me section */
+.about-me {
+    margin-left: -3000px;
+    width: 800px;
+
+    animation: appear-to-right 2s ease-out  1 forwards;
+}
+
+@keyframes appear-to-right {
+    50% {
+        margin-left: 100px;
+    }
+    100% {
+        margin: 0;
+    }
+}
+
 img {
     height: 200px;
 }
@@ -38,7 +54,7 @@ h1 {
     font-size: 60px;
     text-align: left;
     /* background-color: green; */
-    padding-right: 200px;
+    /* padding-right: 200px; */
 }
 
 .bigger-font {
